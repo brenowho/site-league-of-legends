@@ -2,6 +2,8 @@
 
 Este é um projeto simples de um carrossel interativo onde, ao clicar em diferentes botões, a imagem de fundo e as informações correspondentes são alteradas. Além disso, ao clicar em cada botão, é reproduzido um áudio correspondente ao personagem ou tema selecionado.
 
+Feito na Semana do Dev em Dobro 
+
 ## Funcionalidades
 
 - **Troca de Imagem e Informações:** Quando um botão é clicado, a imagem de fundo e as informações na tela são atualizadas para corresponder à seleção do usuário.
@@ -14,5 +16,5 @@ Este é um projeto simples de um carrossel interativo onde, ao clicar em diferen
 - **CSS3:** Estilização e design da interface.
 - **JavaScript:** Lógica de manipulação dos elementos e reprodução de áudio.
 
-## Estrutura do Projeto
+
 
