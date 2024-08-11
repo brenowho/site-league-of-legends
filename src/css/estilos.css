@@ -1,0 +1,121 @@
+body {
+    font-family: "Forum", sans-serif;
+    background-color: aqua;
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+
+.carrossel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.informacoes{
+    display: none;
+}
+
+.informacoes.ativa{
+    display: block;
+}
+
+.conteudo{
+    /*background-color:blueviolet;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    
+}
+
+.informacoes h1{
+    /*background-color: brown;*/
+    font-size: 56px;
+    color: #F0E6D2;
+    margin-bottom: 20px;
+    font-family: 'Forum';
+    letter-spacing: 8px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1); /* Ajuste a sombra conforme necessário */
+
+}
+.informacoes h2{
+    /*background-color: brown;*/
+    font-size: 26px;
+    color: #F0E6D2;
+    margin-bottom: 30px;
+    font-family: 'Forum';
+    letter-spacing: 8px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1); /* Ajuste a sombra conforme necessário */
+
+}
+
+.informacoes .descricao{
+    /*background-color: chartreuse;*/
+    width: 40%;
+    font-size: 24px;
+    font-weight: 500;
+    color: #Ffffff;
+    line-height: 30px;
+    height: 300px;
+    overflow: auto;
+    padding-right: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 3); /* Ajuste a sombra conforme necessário */
+}
+
+.botoes-carrossel{
+    /*background-color: brown;*/
+    display: flex;
+    justify-content: center;
+    gap: 20px;  
+    margin-top: -50px;  
+}
+
+.botoes-carrossel .button{
+    background-color: #A09B8C;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-color: #C89B3C;
+}
+
+.botoes-carrossel .button.selecionado{
+    background-color: #005A82;
+}
+
+.imagem{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+}
+
+.imagem.ativa{
+    display: block;
+    animation: mudarImagem 0.7s;
+}
+
+@keyframes mudarImagem{
+    from {
+        opacity: 0.85;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+main::after{
+    content: "";
+    min-height: 100vh;
+    width: 100vw;
+    /*background-color: blue;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+    z-index: -1;
+}
